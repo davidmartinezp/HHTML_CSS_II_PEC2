@@ -7,154 +7,143 @@ body {
 
 //----------Portada
 //--portada basic
-.league main {
-  max-width: 45em;
-  margin: 0 auto;
-  position: relative;
-  padding: 1em;
-}
+// .league main {
+//   max-width: 45em;
+//   margin: 0 auto;
+//   position: relative;
+//   padding: 1em;
+// }
 
 .league__title {
   font-size: calc(1em + 7vw);
-  margin-bottom: 0.25em;
-  width: 100vw;
-  text-align: right;
+  // margin-bottom: 0.25em;
+  // width: 100vw;
+  // text-align: right;
+  // padding-right: 2vw;
 }
 
-.league__info-title {
-  color: yellow;
-  width: 100vw;
-  text-align: right;
- }
+// .league__info-title {
+//   color: yellow;
+//   width: 100vw;
+//   text-align: right;
+//   padding-right: 2vw;
+//  }
 
-.league__about {
-  line-height: 1.3;
-  margin-bottom: 1em;
-}
-
-a {
-  display: block;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin-bottom: 2em;
-  font-weight: bold;
-}
+// .league__about {
+//   line-height: 1.3;
+//   margin-bottom: 1em;
+// }
 
 .league__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: absolute;
-  top: 0;
+  // position: absolute;
+  // top: 0;
   z-index: -1;
 }
 
-.league__schedule {
-  text-transform: uppercase;
-  line-height: 1.5;
-  font-weight: bold;
-  background-color: wheat;
-  position: absolute;
-  width: 100vw;
-  bottom: 0;
-  padding-left: 2rem;
-  padding-top: 1rem;
-}
+// .league__schedule {
+//   text-transform: uppercase;
+//   line-height: 1.5;
+//   font-weight: bold;
+//   background-color: wheat;
+//   position: absolute;
+//   width: 100vw;
+//   bottom: 0;
+//   padding-left: 2rem;
+//   padding-top: 1rem;
+// }
 
-.league__info-button {
-  border: 0;
-  text-transform: uppercase;
-  font-size: 100%;
-  padding: 1em 2em;
-  position: absolute;
-  right: 1em;
-  bottom: 1em;
-}
+// .league__info-button {
+//   border: 0;
+//   text-transform: uppercase;
+//   font-size: 100%;
+//   padding: 1em 2em;
+//   position: absolute;
+//   right: 1em;
+//   bottom: 1em;
+// }
 
-/* //--portada premium
+//--portada premium
 @supports (display:grid) {
   @media (min-width: 42em) and (min-height: 27em) {
-    main {
+    .league {
       max-width: none;
       padding: 0;
       display: grid;
-      grid-template-columns: 2fr minmax(10em, max-content) minmax(14em, max-content) minmax(1em, 1fr) fit-content(28em) calc(2em + 0.5vw);
-      grid-template-rows: 35vh 40vh 15vh 10vh;
+      grid-template-rows: 43vh 7vh 15vh 35vh;
+      grid-template-columns: 41vw 30vw 15vw 14vw;
     }
 
-    h1 {
-      grid-column: 3 / 6;
+    .league__title {
+      grid-column: 3 / 5;
       grid-row: 1 / 2;
       z-index: 2;
       padding-left: 0.25em;
       margin-bottom: initial;
     }
 
-    h2 {
-      grid-row: 1 / -1;
-      grid-column: 6 / 7;
+    .league__info-title {
+      grid-row: 1;
+      grid-column: 1 / 5;
       writing-mode: vertical-rl;
       margin-bottom: initial;
+      padding-top: 20px;
     }
 
-    hr {
-      grid-column: 5 / 6;
-      grid-row: 2;
-      height: 6px;
-      width: 20ch;
-    }
-
-    .about {
+    .league__about {
       grid-column: 5 / 6;
       grid-row: 2;
       align-self: end;
       padding-bottom: 4vh;
       margin-bottom: initial;
+      
     }
 
-    a {
-      grid-column: 5 / 6;
-      justify-self: end;
-      align-self: center;
-      margin-bottom: initial;
-
-      &::before {
-        content: '';
-        display: block;
-        height: 4px;
-        width: 4ch;
-        margin-bottom: 1em;
-      }
+    .league__image {
+      grid-column: 1 / 5;
+      grid-row: 1 / 5;
     }
 
-    img {
-      grid-column: 1 / 4;
-      grid-row: 1 / 4;
-    }
-
-    .location {
-      grid-column: 3 / 4;
-      grid-row: 3 / 4;
+    .league__schedule {
+      grid-column: 2 / 2;
+      grid-row: 3 / 2;
       z-index: 2;
       text-align: center;
       display: flex;
+      background-color: wheat;
+      opacity: 0.77; 
 
-      p {
+      .league__schedule-dates {
         margin: auto;
+        text-transform: uppercase;
+        line-height: 1.5;
+        font-weight: bold;
+        padding: 0 10px 0 10px;
       }
     }
 
-    button {
-      grid-column: 2 / 3;
-      grid-row: 4 / 5;
+    .league__info{
+      
+      
+      grid-column: 3 / 3;
+      grid-row: 3 / 4;
       position: initial;
       padding: 0;
+      background-color: white;
+      
+      display: flex;
+      align-items: center;
+      .league__info-button
+      {
+        padding-top: 25%;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+      }
     }
   }
-
-  @media (min-width: 48em) and (min-height: 27em) {
-    hr {
-      opacity: 1;
-    }
-  }
-} */
+}
