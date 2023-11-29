@@ -8,13 +8,16 @@ nav{
   padding-left: 2vw !important;
   padding-right: 2vw !important;
 }
+footer nav {
+  height: 4vh;
+}
 //----------Portada
 //--portada basic
- .league main {
-   max-width: 45em;
+ main {
    margin: 0 auto;
    position: relative;
-   padding: 1em;
+   height: 91vh;
+   overflow: hidden;
  }
 
 .league__title {
@@ -69,6 +72,15 @@ nav{
   color: black;
 }
 
+@media screen and (max-width: 1050px) {
+
+  .league__image {
+    transform: rotate(270deg);
+    width: initial;
+    left: -350px;
+    top: auto;
+  }
+}
 //--portada premium
 @supports (display:grid) {
   @media (min-width: 65em) and (min-height: 27em) {
@@ -163,4 +175,30 @@ nav{
 
     }
   }
+}
+
+.participants{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.participant-card {
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+}
+
+.participant-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.participant-info {
+  margin-top: 10px;
 }
