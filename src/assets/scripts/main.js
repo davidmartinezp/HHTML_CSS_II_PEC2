@@ -5,15 +5,11 @@
 
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
-import 'jquery'; // Importar jQuery
-import 'bootstrap'; // Importar Bootstrap JavaScript
+// Importa las bibliotecas JavaScript de Bootstrap y jQuery
+
+import 'bootstrap';
+
 /**
  * Write any other JavaScript below
  */
-
-+( function() {
-  const university = "UOC";
-  console.log(`Hello, ${university}!`);
-} )();

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <link rel="icon" href="./assets/images/tennisball.svg" type="image/x-icon">
+    <title>XXI Tenis</title>
+  </head>
+  <body class = "contacto">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+    <a class="navbar-brand" href="#">
+      <i class="fa-solid fa-baseball" style="color: #eae543;"></i>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" >Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="info.html">Información</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="participantes.html">Participantes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header>
+    <h1 class="header">Contacto</h1>
+  </header>
+  <main>
+    <div class="jumbotron">
+        <h2 class="display-5">¡Apúntate a la liga!</h2>
+        <p class="contact-paragraph lead">
+            ¡Únete a nuestra emocionante liga de tenis! Estamos encantados de recibir nuevos miembros apasionados por este deporte. Completar el formulario a continuación nos permitirá conocerte mejor y personalizar tu experiencia en la liga.       
+            Si amas el tenis y estás listo para enfrentar nuevos desafíos, ¡este es el lugar adecuado para ti! Esperamos conocerte en la cancha y compartir juntos la pasión por este maravilloso deporte. 
+            Completa el formulario con tus detalles y pronto estarás formando parte de nuestra comunidad tenística. ¡Nos vemos en la cancha!
+          </p>
+        <hr class="my-4">
+    </div>
+    <section class="form-section">
+
+        <form name="contact" netlify>
+        <div class="mb-3">
+            <label class = "form__label form-label" for="name">Nombre:</label>
+            <input class = "form__input form-control" type="text" id="name" name="name" required>
+        </div>
+        <div class="mb-3">
+            <label class = "form__label form-label" for="email">Correo electrónico:</label>
+            <input class = "form__input form-control" type="email" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+            <label class = "form__label  form-label" for="message">Háblanos sobre ti:</label>
+            <textarea class = "form__textarea form-control" id="message" name="message" rows="4" required></textarea>    
+        </div>
+        <button type="submit" class="btn btn-primary form__button">Enviar solicitud de inscripción</button>
+      </form>
+
+    </section>
+  </main>
+</body>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </body>
+</html>

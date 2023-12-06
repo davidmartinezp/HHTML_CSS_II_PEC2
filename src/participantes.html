@@ -1,232 +1,230 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <!-- <link rel="icon" href="./assets/images/tennisball.svg" type="image/x-icon"> -->
+        <link rel="icon" href="./assets/images/tennisball.svg" type="image/x-icon">
         <title>XXI Tenis</title>
       </head>
 <body class = "participantes">
-
   <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
       <a class="navbar-brand" href="#">
         <i class="fa-solid fa-baseball" style="color: #eae543;"></i>
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
         <ul class="navbar-nav nav-pills">
           <li class="nav-item">
             <a class="nav-link" href="index.html" >Inicio</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="info.html">Información</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link active" href="participantes.html">Participantes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="contacto.html">Contacto</a>
           </li>
         </ul>
       </div>
     </nav>
 
   <header>
-    <h1 class="header__title">Participantes de la Liga de Tenis</h1>
+    <h1 class="header">Participantes de la Liga de Tenis</h1>
   </header>
 
   <main class = participants>
     <!-- Lista de Participantes -->
-    <div class="participant-card">
-      <div class="participant-card__name">Carlos Sánchez</div>
-      <div class="participant-card__info">
-        <p class="participant-card__level" class="participant-card__level">Nivel: ★★★☆☆</p>
-        <p class="participant-card__age">Edad: 28 años</p>
-        <p class="participant-card__curiosity">Curiosidad: Carlos es conocido por su juego agresivo en la red.</p>
+    <div class="participant__card">
+      <div class="participant__card-name">Carlos Sánchez</div>
+      <div class="participant__card-info">
+        <p class="participant__card-level">Nivel: ★★★☆☆</p>
+        <p class="participant__card-age">Edad: 28 años</p>
+        <p class="participant__card-curiosity">Curiosidad: Carlos es conocido por su juego agresivo en la red.</p>
       </div>
     </div>
 
-    <div class="participant-card">
-      <div class="participant-card__name">Laura Gómez</div>
-      <div class="participant-card__info">
-        <p class="participant-card__level">Nivel: ★★★★☆</p>
-        <p class="participant-card__age" class="participant-card__age">Edad: 24 años</p>
-        <p class="participant-card__curiosity">Curiosidad: Laura ha ganado el premio a la jugadora más deportiva de la liga.</p>
+    <div class="participant__card">
+      <div class="participant__card-name">Laura Gómez</div>
+      <div class="participant__card-info">
+        <p class="participant__card-level">Nivel: ★★★★☆</p>
+        <p class="participant__card-age" >Edad: 24 años</p>
+        <p class="participant__card-curiosity">Curiosidad: Laura ha ganado el premio a la jugadora más deportiva de la liga.</p>
       </div>
     </div>
 
-    <div class="participant-card">
-      <div class="participant-card__name">Martín Rodríguez</div>
-      <div class="participant-card__info">
-        <p class="participant-card__level">Nivel: ★★★★☆</p>
-        <p class="participant-card__age">Edad: 30 años</p>
-        <p class="participant-card__curiosity" class="participant-card__curiosity">Curiosidad: Martín tiene un servicio impredecible que confunde a sus oponentes.</p>
+    <div class="participant__card">
+      <div class="participant__card-name">Martín Rodríguez</div>
+      <div class="participant__card-info">
+        <p class="participant__card-level">Nivel: ★★★★☆</p>
+        <p class="participant__card-age">Edad: 30 años</p>
+        <p class="participant__card-curiosity">Curiosidad: Martín tiene un servicio impredecible que confunde a sus oponentes.</p>
       </div>
     </div>
 
-    <div class="participant-card">
-        <div class="participant-card__name">Laura Gómez</div>
-        <div class="participant-card__info">
-          <p class="participant-card__level">Nivel: ★★★★☆</p>
-          <p class="participant-card__age">Edad: 24 años</p>
-          <p class="participant-card__curiosity">Curiosidad: Laura ha ganado el premio a la jugadora más deportiva de la liga.</p>
+    <div class="participant__card">
+        <div class="participant__card-name">Laura Gómez</div>
+        <div class="participant__card-info">
+          <p class="participant__card-level">Nivel: ★★★★☆</p>
+          <p class="participant__card-age">Edad: 24 años</p>
+          <p class="participant__card-curiosity">Curiosidad: Laura ha ganado el premio a la jugadora más deportiva de la liga.</p>
         </div>
       </div>
 
-      <div class="participant-card">
-        <div class="participant-card__name">Laura Rodríguez</div>
-        <div class="participant-card__info">
-          <p class="participant-card__level">Nivel: ★★★★★</p>
-          <p class="participant-card__age">Edad: 26 años</p>
-          <p class="participant-card__curiosity">Curiosidad: Laura tiene un potente revés que sorprende a sus oponentes.</p>
+      <div class="participant__card">
+        <div class="participant__card-name">Laura Rodríguez</div>
+        <div class="participant__card-info">
+          <p class="participant__card-level">Nivel: ★★★★★</p>
+          <p class="participant__card-age">Edad: 26 años</p>
+          <p class="participant__card-curiosity">Curiosidad: Laura tiene un potente revés que sorprende a sus oponentes.</p>
         </div>
       </div>
   
-      <div class="participant-card">
-        <div class="participant-card__name">Javier López</div>
-        <div class="participant-card__info">
-          <p class="participant-card__level">Nivel: ★★★☆☆</p>
-          <p class="participant-card__age">Edad: 31 años</p>
-          <p class="participant-card__curiosity">Curiosidad: Javier ha participado en torneos internacionales representando a su país.</p>
+      <div class="participant__card">
+        <div class="participant__card-name">Javier López</div>
+        <div class="participant__card-info">
+          <p class="participant__card-level">Nivel: ★★★☆☆</p>
+          <p class="participant__card-age">Edad: 31 años</p>
+          <p class="participant__card-curiosity">Curiosidad: Javier ha participado en torneos internacionales representando a su país.</p>
         </div>
       </div>
   
-      <div class="participant-card">
-        <div class="participant-card__name">Ana Martínez</div>
-        <div class="participant-card__info">
-          <p class="participant-card__level">Nivel: ★★★★☆</p>
-          <p class="participant-card__age">Edad: 27 años</p>
-          <p class="participant-card__curiosity">Curiosidad: Ana es conocida por su habilidad para realizar dejadas perfectas.</p>
+      <div class="participant__card">
+        <div class="participant__card-name">Ana Martínez</div>
+        <div class="participant__card-info">
+          <p class="participant__card-level">Nivel: ★★★★☆</p>
+          <p class="participant__card-age">Edad: 27 años</p>
+          <p class="participant__card-curiosity">Curiosidad: Ana es conocida por su habilidad para realizar dejadas perfectas.</p>
         </div>
       </div>
   
-      <div class="participant-card">
-        <div class="participant-card__name">Pedro Ramírez</div>
-        <div class="participant-card__info">
-          <p class="participant-card__level">Nivel: ★★★☆☆</p>
-          <p class="participant-card__age">Edad: 29 años</p>
-          <p class="participant-card__curiosity">Curiosidad: Pedro ha entrenado con un ex campeón de tenis.</p>
+      <div class="participant__card">
+        <div class="participant__card-name">Pedro Ramírez</div>
+        <div class="participant__card-info">
+          <p class="participant__card-level">Nivel: ★★★☆☆</p>
+          <p class="participant__card-age">Edad: 29 años</p>
+          <p class="participant__card-curiosity">Curiosidad: Pedro ha entrenado con un ex campeón de tenis.</p>
         </div>
       </div>
   
-      <div class="participant-card">
-        <div class="participant-card__name">Sofía González</div>
-        <div class="participant-card__info">
-          <p class="participant-card__level">Nivel: ★★★★★</p>
-          <p class="participant-card__age">Edad: 25 años</p>
-          <p class="participant-card__curiosity">Curiosidad: Sofía ha ganado varios torneos locales en su ciudad natal.</p>
+      <div class="participant__card">
+        <div class="participant__card-name">Sofía González</div>
+        <div class="participant__card-info">
+          <p class="participant__card-level">Nivel: ★★★★★</p>
+          <p class="participant__card-age">Edad: 25 años</p>
+          <p class="participant__card-curiosity">Curiosidad: Sofía ha ganado varios torneos locales en su ciudad natal.</p>
         </div>
       </div>
   
-      <div class="participant-card">
-        <div class="participant-card__name">Ricardo Díaz</div>
-        <div class="participant-card__info">
-          <p class="participant-card__level">Nivel: ★★★★☆</p>
-          <p class="participant-card__age">Edad: 32 años</p>
-          <p class="participant-card__curiosity">Curiosidad: Ricardo tiene una rutina de entrenamiento única que incluye yoga y pilates.</p>
+      <div class="participant__card">
+        <div class="participant__card-name">Ricardo Díaz</div>
+        <div class="participant__card-info">
+          <p class="participant__card-level">Nivel: ★★★★☆</p>
+          <p class="participant__card-age">Edad: 32 años</p>
+          <p class="participant__card-curiosity">Curiosidad: Ricardo tiene una rutina de entrenamiento única que incluye yoga y pilates.</p>
         </div>
       </div>
   
-      <div class="participant-card">
-        <div class="participant-card__name">Isabel Vargas</div>
-        <div class="participant-card__info">
-          <p class="participant-card__level">Nivel: ★★★☆☆</p>
-          <p class="participant-card__age">Edad: 28 años</p>
-          <p class="participant-card__curiosity">Curiosidad: Isabel es una apasionada defensora de la sostenibilidad en el deporte.</p>
+      <div class="participant__card">
+        <div class="participant__card-name">Isabel Vargas</div>
+        <div class="participant__card-info">
+          <p class="participant__card-level">Nivel: ★★★☆☆</p>
+          <p class="participant__card-age">Edad: 28 años</p>
+          <p class="participant__card-curiosity">Curiosidad: Isabel es una apasionada defensora de la sostenibilidad en el deporte.</p>
         </div>
       </div>
   
-      <div class="participant-card">
-        <div class="participant-card__name">Alejandro Torres</div>
-        <div class="participant-card__info">
-          <p class="participant-card__level">Nivel: ★★★★☆</p>
-          <p class="participant-card__age">Edad: 30 años</p>
-          <p class="participant-card__curiosity">Curiosidad: Alejandro tiene el récord de más aces en una sola temporada.</p>
+      <div class="participant__card">
+        <div class="participant__card-name">Alejandro Torres</div>
+        <div class="participant__card-info">
+          <p class="participant__card-level">Nivel: ★★★★☆</p>
+          <p class="participant__card-age">Edad: 30 años</p>
+          <p class="participant__card-curiosity">Curiosidad: Alejandro tiene el récord de más aces en una sola temporada.</p>
         </div>
       </div>
   
-      <div class="participant-card">
-        <div class="participant-card__name">Lucía Fernández</div>
-        <div class="participant-card__info">
-          <p class="participant-card__level">Nivel: ★★★★★</p>
-          <p class="participant-card__age">Edad: 26 años</p>
-          <p class="participant-card__curiosity">Curiosidad: Lucía ha representado a su país en la Copa Federación.</p>
+      <div class="participant__card">
+        <div class="participant__card-name">Lucía Fernández</div>
+        <div class="participant__card-info">
+          <p class="participant__card-level">Nivel: ★★★★★</p>
+          <p class="participant__card-age">Edad: 26 años</p>
+          <p class="participant__card-curiosity">Curiosidad: Lucía ha representado a su país en la Copa Federación.</p>
         </div>
       </div>
   
-      <div class="participant-card">
-        <div class="participant-card__name">Héctor Núñez</div>
-        <div class="participant-card__info">
-          <p class="participant-card__level">Nivel: ★★★☆☆</p>
-          <p class="participant-card__age">Edad: 31 años</p>
-          <p class="participant-card__curiosity">Curiosidad: Héctor es un ávido fanático de los juegos mentales en la cancha.</p>
+      <div class="participant__card">
+        <div class="participant__card-name">Héctor Núñez</div>
+        <div class="participant__card-info">
+          <p class="participant__card-level">Nivel: ★★★☆☆</p>
+          <p class="participant__card-age">Edad: 31 años</p>
+          <p class="participant__card-curiosity">Curiosidad: Héctor es un ávido fanático de los juegos mentales en la cancha.</p>
         </div>
       </div>
   
-      <div class="participant-card">
-        <div class="participant-card__name">Gabriela Silva</div>
-        <div class="participant-card__info">
-          <p class="participant-card__level">Nivel: ★★★★☆</p>
-          <p class="participant-card__age">Edad: 29 años</p>
-          <p class="participant-card__curiosity">Curiosidad: Gabriela tiene un saque que a menudo supera los 200 km/h.</p>
+      <div class="participant__card">
+        <div class="participant__card-name">Gabriela Silva</div>
+        <div class="participant__card-info">
+          <p class="participant__card-level">Nivel: ★★★★☆</p>
+          <p class="participant__card-age">Edad: 29 años</p>
+          <p class="participant__card-curiosity">Curiosidad: Gabriela tiene un saque que a menudo supera los 200 km/h.</p>
         </div>
       </div>
   
-      <div class="participant-card">
-        <div class="participant-card__name">Daniel Mendoza</div>
-        <div class="participant-card__info">
-          <p class="participant-card__level">Nivel: ★★★☆☆</p>
-          <p class="participant-card__age">Edad: 27 años</p>
-          <p class="participant-card__curiosity">Curiosidad: Daniel ha participado en torneos de tenis de playa en todo el mundo.</p>
+      <div class="participant__card">
+        <div class="participant__card-name">Daniel Mendoza</div>
+        <div class="participant__card-info">
+          <p class="participant__card-level">Nivel: ★★★☆☆</p>
+          <p class="participant__card-age">Edad: 27 años</p>
+          <p class="participant__card-curiosity">Curiosidad: Daniel ha participado en torneos de tenis de playa en todo el mundo.</p>
         </div>
       </div>
   
-      <div class="participant-card">
-        <div class="participant-card__name">Valeria Cruz</div>
-        <div class="participant-card__info">
-          <p class="participant-card__level">Nivel: ★★★★★</p>
-          <p class="participant-card__age">Edad: 25 años</p>
-          <p class="participant-card__curiosity">Curiosidad: Valeria ha entrenado con un entrenador olímpico de tenis.</p>
+      <div class="participant__card">
+        <div class="participant__card-name">Valeria Cruz</div>
+        <div class="participant__card-info">
+          <p class="participant__card-level">Nivel: ★★★★★</p>
+          <p class="participant__card-age">Edad: 25 años</p>
+          <p class="participant__card-curiosity">Curiosidad: Valeria ha entrenado con un entrenador olímpico de tenis.</p>
         </div>
       </div>
   
-      <div class="participant-card">
-        <div class="participant-card__name">Fernando Pérez</div>
-        <div class="participant-card__info">
-          <p class="participant-card__level">Nivel: ★★★☆☆</p>
-          <p class="participant-card__age">Edad: 30 años</p>
-          <p class="participant-card__curiosity">Curiosidad: Fernando es conocido por su técnica perfeccionista en cada golpe.</p>
+      <div class="participant__card">
+        <div class="participant__card-name">Fernando Pérez</div>
+        <div class="participant__card-info">
+          <p class="participant__card-level">Nivel: ★★★☆☆</p>
+          <p class="participant__card-age">Edad: 30 años</p>
+          <p class="participant__card-curiosity">Curiosidad: Fernando es conocido por su técnica perfeccionista en cada golpe.</p>
         </div>
       </div>
   
-      <div class="participant-card">
-        <div class="participant-card__name">Camila Rojas</div>
-        <div class="participant-card__info">
-          <p class="participant-card__level">Nivel: ★★★★☆</p>
-          <p class="participant-card__age">Edad: 28 años</p>
-          <p class="participant-card__curiosity">Curiosidad: Camila ha ganado el premio a la jugadora más valiente de la liga.</p>
+      <div class="participant__card">
+        <div class="participant__card-name">Camila Rojas</div>
+        <div class="participant__card-info">
+          <p class="participant__card-level">Nivel: ★★★★☆</p>
+          <p class="participant__card-age">Edad: 28 años</p>
+          <p class="participant__card-curiosity">Curiosidad: Camila ha ganado el premio a la jugadora más valiente de la liga.</p>
         </div>
       </div>
   
-      <div class="participant-card">
-        <div class="participant-card__name">Alejandro Soto</div>
-        <div class="participant-card__info">
-          <p class="participant-card__level">Nivel: ★★★☆☆</p>
-          <p class="participant-card__age">Edad: 29 años</p>
-          <p class="participant-card__curiosity">Curiosidad: Alejandro es un apasionado defensor de la técnica clásica en el tenis.</p>
+      <div class="participant__card">
+        <div class="participant__card-name">Alejandro Soto</div>
+        <div class="participant__card-info">
+          <p class="participant__card-level">Nivel: ★★★☆☆</p>
+          <p class="participant__card-age">Edad: 29 años</p>
+          <p class="participant__card-curiosity">Curiosidad: Alejandro es un apasionado defensor de la técnica clásica en el tenis.</p>
         </div>
       </div>
 
-      <div class="participant-card">
-        <div class="participant-card__name">Pedro Martínez</div>
-        <div class="participant-card__info">
-          <p class="participant-card__level">Nivel: ★★★★☆</p>
-          <p class="participant-card__age">Edad: 19 años</p>
-          <p class="participant-card__curiosity">Curiosidad: Pedro es una joven promesa.</p>
+      <div class="participant__card">
+        <div class="participant__card-name">Pedro Martínez</div>
+        <div class="participant__card-info">
+          <p class="participant__card-level">Nivel: ★★★★☆</p>
+          <p class="participant__card-age">Edad: 19 años</p>
+          <p class="participant__card-curiosity">Curiosidad: Pedro es una joven promesa.</p>
         </div>
       </div>
   </main>

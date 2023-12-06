@@ -4,13 +4,19 @@
     "stylelint-selector-bem-pattern"
   ],
   "rules": {
+    "selector-class-pattern": [
+      "^[a-z]+(?:__[a-z]+)?(?:-[a-z]+)?$",
+      {
+        "message": "Expected class selector to be kebab-case"
+      }
+    ],
     "plugin/selector-bem-pattern": {
-      "componentName": "[A-Z]+",
+      "componentName": "[A-Za-z]+",
       "componentSelectors": {
-        "initial": "^\\.{componentName}(?:-[a-z]+)?$",
+        "initial": "^\\.{componentName}(?:__[a-z]+)?$",
         "combined": "^\\.combined-{componentName}-[a-z]+$"
       },
-      "utilitySelectors": "^\\.util-[a-z]+$",
+      "utilitySelectors": "^\\.util-[a-z]+$"
     },
     "rule-empty-line-before": [
       "always",
@@ -20,3 +26,4 @@
     ]
   }
 }
+

@@ -1,51 +1,52 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <!-- <link rel="icon" href="./assets/images/tennisball.svg" type="image/x-icon"> -->
+    <link rel="icon" href="./assets/images/tennisball.svg" type="image/x-icon">
     <title>XXI Tenis</title>
   </head>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
-    <a class="navbar-brand" href="#">
-      <i class="fa-solid fa-baseball" style="color: #eae543;"></i>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav nav-pills">
-        <li class="nav-item active">
-          <a class="nav-link active" href="index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="participantes.html">Participante</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Servicios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <main class="league">
-    <h1 class="league__title">XXI Tenis</h1>
-    <h2 class="league__info-title">Información de la liga</h2>
-    <img class="league__image" src="./assets/images/portadaImg.jpeg" alt="Imagen portada tennis">
-    <div class="league__schedule">
-    <p class="league__schedule-dates">Del 10-12-2023 al 17-12-2023 pista principal</p>
-    </div>
-    <div class="league__info">
-      <a href="" class="league__info-button">MÁS INFO</a>
-    </div>
+  <body class = "index">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">
+        <i class="fa-solid fa-baseball" style="color: #eae543;"></i>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end bg-light" id="navbarNavDropdown">
+        <ul class="navbar-nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html" >Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="info.html">Información</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="participantes.html">Participantes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="league">
+      <h1 class="league__title">XXI Tenis</h1>
+      <h2 class="league__info-title">Información de la liga</h2>
+      <img class="league__image" src="./assets/images/portadaImg.jpeg" alt="Imagen portada tennis">
+      <div class="league__schedule">
+        <p class="league__schedule-dates">Del 10-12-2023 al 17-12-2023 pista principal</p>
+      </div>
+      <div class="container mt-4 league__info">
+        <button type="button" class="btn btn-primary btn-lg float-end" onclick="window.location.href='info.html'">
+          MÁS INFO
+        </button>
+      </div>
     </main>
-  
+  </body>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
 </html>
