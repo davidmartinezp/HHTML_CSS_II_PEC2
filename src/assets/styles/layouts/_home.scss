@@ -20,6 +20,13 @@ main {
   padding: 10px;
 }
 
+@supports (color: color(display-p3 1 1 1)) {
+  .header {
+    background-color: $color-background-headers-displayp3;
+    color: $color-text-headers-displayp3;
+  }
+}
+
 // footer
 footer nav {
   margin-top: 10px;

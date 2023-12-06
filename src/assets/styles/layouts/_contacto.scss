@@ -34,6 +34,17 @@
       .form__button:hover {
         background-color: $color-primary-form;
       }
+
+      @supports (color: color(display-p3 1 1 1)) {
+        .form__button {
+            background-color: $color-secondary-form-displayp3;
+          }
+          
+          .form__button:hover {
+            background-color: $color-primary-form-displayp3;
+          }
+      }
+
 }
   
   
